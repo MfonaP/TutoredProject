@@ -1,0 +1,523 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 80px;
+    background: rgb(0, 69, 0);
+}
+
+.navbar h2{
+    color: #ffff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0px 20px;
+}
+
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.navmenu li{
+    display: inline-block;
+}
+.navmenu li a{
+    color: #ffffff;
+    margin-right: 20px;
+    padding: 0px 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navmenu li a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.navmenu .dropdown{
+    position: relative;
+    display: inline-block;
+}
+.navmenu .dropbtn{
+    background-color:rgb(0, 69, 0) ;
+    color: white;
+    align-items: center;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+
+}
+
+.navmenu .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.navmenu .dropdown-content a{
+float: none;
+color: #000000;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.navmenu .dropdown-content a:hover{
+    background-color: green;
+    text-decoration: none;
+    width: 79%;
+    overflow: auto;
+
+}
+
+.navmenu .dropdown:hover .dropdown-content {
+    display: block;
+}
+.search-box .search{
+    padding: 8px;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.navmenu .search-box {
+    color: #ffffff;
+    position: relative;
+    right: 20px;
+    top: 1px;
+    background-color: green;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+header{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    height: 100vh;
+}
+
+.main-header{
+    width: 75%;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-header h3{
+    font-size: 22px;
+    color:green ;
+    font-weight: 550;
+}
+
+.main-header h5{
+    font-size: 28px;
+    width: 340px;
+    margin-top: 0px;
+    margin-bottom: 14px;
+}
+
+.main-header p{
+    margin-bottom: 50px;
+}
+
+.main-header .btn{
+    background-color: green;
+    border: 1px solid green;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.main-header .btn:hover{
+    color: green;
+    background: white;
+}
+
+.main-header img{
+    width: 400px;
+    height: auto;
+}
+
+.cat-header{
+    text-align: center;
+    padding: 20px 0;
+
+}
+section{
+    width: 95%;
+    margin: auto;
+    padding-bottom: 150px;
+}
+
+.cat-header h3{
+    font-size: 38px;
+    padding-bottom: 14px;
+}
+
+.cat-books{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    margin-top: 0px;
+}
+
+.cat-books .books{
+    width: 300px;
+    height: auto;
+    padding: 0px;
+    position: relative;
+
+}
+
+.cat-books .books .book-img{
+    background-color: none;
+    padding: 18px;
+    border-radius: 50%;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.cat-books .books img{
+    width: 300px;
+}
+
+.cat-books .books h4{
+    margin-top: 1px;
+    font-size: 22px;
+    position: relative;
+    left: 5%;
+}
+
+.cat-books .books p{
+    font-size: 18px;
+    padding-top:10px ;
+    margin-top: 10px;
+}
+
+.menubar{
+    color: white;
+    font-size: 30px;
+    padding-right: 20px;
+    position: absolute;
+    top: 22px;
+    right: 40px;
+    cursor: pointer;
+
+}
+
+.cat-books .books h4 a{
+    color: white;
+    border: 1px solid green;
+    background: green;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    transition: all .5s;
+}
+
+.cat-books .books h4 a:hover{
+    color: green;
+    background: white;
+}
+
+.set-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 75%;
+    margin: auto;
+}
+
+.set-row img{
+    width: 680px;
+    height: auto;
+}
+
+#about{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 80px 0px;
+}
+
+.set-row .about-content{
+    padding-left: 30px;
+    margin-bottom: 60px;
+}
+
+.set-row .about-content h2{
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+
+.set-row .about-content p{
+    width: 300px;
+}
+
+.cat-books{
+    display: block;
+    position: relative;
+}
+
+.set-row .about-content .btn2{
+    background: green;
+    border: 1px solid green;
+    font-size: 24px;
+    color: white;
+    font-weight: 400;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.set-row .about-content .btn2:hover{
+    background: white;
+    color: green;
+}
+
+.wrapper{
+    
+    max-width:1170px ;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+
+}
+
+#footer{
+    background-color: green;
+    padding: 70px 0;
+    width: 100%;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+   content: '';
+    position: absolute;
+    bottom: -10px;
+    background-color: #ffffff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffff;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: green;
+    transition: all 0.5s ease;
+
+}
+
+.footer-col .social-links a:hover{
+    color: rgb(255, 255, 255);
+    background-color: green;
+}
+
+.footer-col p{
+    color: #ffffff;
+   
+}
+
+@media(max-width: 767px){
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px){
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:1420px){
+    .set-row{
+        display: block;
+    }
+}
+
+@media(max-width:991px){
+    .navmenu{
+        display: block;
+        position: absolute;
+        right: 100%;
+        top: 10%;
+        width: 300px;
+        height: auto;
+        background: rgb(0, 69, 0);
+    }
+
+    .navmenu li{
+        display: block;
+        line-height:30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .search-box{
+        text-align: center;
+        margin-left: 40px;
+        margin-bottom: 30px;
+    }
+
+    .navmenu.open{
+        right: 0;
+
+    }
+
+    .cat-books .books .book-img{
+        position: relative;
+        letter-spacing: 25%;
+    }
+
+    .main-header p{
+        display: block;
+
+    }
+
+    .set-row img{
+        width: 400px;
+        height: auto;
+
+    }
+
+    @media(max-width: 890px){
+        .main-header{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 60px 0;
+        }
+    }
+
+    .main-header h3{
+        margin-bottom: 20px;
+
+    }
+
+    .main-header p{
+        margin-bottom:20px ;
+
+    }
+
+    .main-header img{
+        width: 360px;
+        height: auto;
+        margin-top: 30px;
+    }
+    .set-row .about-content h2{
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+    .set-row .about-content p{
+        width: 300px;
+    }
+
+    .cat-books .books .book-img{
+        position: relative;
+        left: 35%;
+    }
+
+    .cat-books .books img{
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width:460px){
+    section #about{
+        padding-top: 80px;
+    }
+
+    .main-header img{
+        width: 260px;
+    }
+
+    .cat-books .books{
+        width: 260px;
+    }
+
+    .cat-books .books .book-img{
+        position: relative;
+        left: 25%;
+    }
+
+    .set-row img{
+        width:330px ;
+        height: auto;
+    }
+}

@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container h1{
+    background-color:rgb(0, 69, 0) ;
+    height: 70px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.about-us{
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin: 10px;
+}
+
+.about-us h4{
+    font-size: 19px;
+    color: green;
+    margin: 15px;
+}
+.about-us p{
+    margin: 0;
+}
+
+.about-us button{
+    display: block;
+    background: green;
+    color: white;
+    border: 1px solid green;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 20px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all .5s;
+}
+
+.about-img h2{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    margin: 40px;
+}
