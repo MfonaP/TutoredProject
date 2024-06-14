@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Information Form</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Book Information Form</h1>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="book-name">Book Name:</label>
+                <input type="text" id="book-name" name="bookName" required>
+            </div>
+            <div class="form-group">
+                <label for="author-name">Author Name:</label>
+                <input type="text" id="author-name" name="authorName" required>
+            </div>
+            <div class="form-group">
+                <label for="book-description">Book Description:</label>
+                <textarea id="book-description" name="bookDescription" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="copies-available">Number of Copies Available:</label>
+                <input type="number" id="copies-available" name="copiesAvailable" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
