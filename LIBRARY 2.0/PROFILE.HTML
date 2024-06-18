@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Dropdown</title>
+    <link rel="stylesheet" href="PROFILE.CSS">
+</head>
+<body>
+    <div class="profile-dropdown">
+        <button class="profile-button" onclick="toggleDropdown()">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+            <span class="username">Username</span>
+            <i class="arrow-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+            <a href="#" class="edit-profile">Edit Profile</a>
+        </div>
+    </div>
+
+    <script src="scripts.js">
+
+function toggleDropdown() {
+    document.getElementById("dropdown-content").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.profile-button') && !event.target.matches('.profile-pic') && !event.target.matches('.username')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
+
+    </script>
+</body>
+</html>
