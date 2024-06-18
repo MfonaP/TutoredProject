@@ -1,0 +1,40 @@
+-- Inserting data into authors table
+INSERT INTO authors (author_id, first_name, last_name) VALUES
+(18, 'George', 'Orwell'),
+(19, 'Harper', 'Lee'),
+(20, 'J.K.', 'Rowling'),
+(21, 'Jane', 'Austen'),
+(22, 'Mark', 'Twain');
+
+-- Inserting data into genres table
+INSERT INTO genres (genre_id, name) VALUES
+(25, 'Dystopian'),
+(26, 'Classic'),
+(27, 'Fantasy'),
+(28, 'Romance'),
+(29, 'Satire');
+
+-- Inserting data into books table
+INSERT INTO books (book_id, title, author_id, genre_id, isbn, publication_year, copies_available, description) VALUES
+(10, '1984', 18, 25, '9780451524935', 1949, 3,wonders),
+(11, 'To Kill a Mockingbird', 19, 26, '9780060935467', 1960, 5,wonders),
+(12, 'Harry Potter and the Philosopher\'s Stone', 20, 27, '9780747532699', 1997, 7,wonders),
+(13, 'Pride and Prejudice', 21, 28, '9780141439518', 1813, 4,wonders),
+(14, 'Adventures of Huckleberry Finn', 22, 29, '9780486280615', 1884, 6,wonders);
+
+-- Inserting data into members table
+INSERT INTO members (first_name, last_name, email, phone_number, address) VALUES
+('John', 'Doe', 'john.doe@example.com', '123-456-7890', '123 Maple Street'),
+('Jane', 'Smith', 'jane.smith@example.com', '234-567-8901', '456 Oak Avenue'),
+('Robert', 'Johnson', 'robert.johnson@example.com', '345-678-9012', '789 Pine Road');
+
+-- Inserting data into loans table
+INSERT INTO loans (book_id, member_id, loan_date, return_date, is_returned) VALUES
+(10, 1, '2023-06-01', '2023-06-15',False),
+(11, 2, '2023-06-05', '2023-06-20',False),
+(12, 3, '2023-06-10', '2023-06-25',False);
+
+-- Inserting data into staff table
+INSERT INTO staff (first_name, last_name, email, phone_number, address, role, hire_date, sex, username, password) VALUES
+('Alice', 'Walker', 'alice.walker@example.com', '456-789-0123', '321 Elm Street', 'Librarian', '2020-01-15', female, suzy, susan),
+('Bob', 'Martin', 'bob.martin@example.com', '567-890-1234', '654 Cedar Boulevard', 'Assistant', '2021-06-01', female, suzy, susan);
